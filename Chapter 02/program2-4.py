@@ -1,7 +1,7 @@
-import cv2
+import cv2 as cv
 import sys
 
-cap = cv2.VideoCapture(0)  # 내장 카메라의 경우 0번 인덱스 사용
+cap = cv.VideoCapture(0)  # 내장 카메라의 경우 0번 인덱스 사용
 
 
 if not cap.isOpened():
@@ -14,9 +14,9 @@ while True:
         print('프레임 획득에 실패하여 루프를 나갑니다.')
         break
 
-    cv2.imshow('Video display', frame)
+    cv.imshow('Video display', frame)
 
-    key = cv2.waitKey(1)
+    key = cv.waitKey(1)
     if key == ord('q'):
         break
 
