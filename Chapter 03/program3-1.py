@@ -7,11 +7,12 @@ if img is None:
 
 cv.imshow('origin_img',img)
 cv.imshow('upper left half',img[0:img.shape[0]//2, 0:img.shape[1]//2,:])
-cv.imshow('center half',img[0:img.shape[0]//4:3*img.shape[0]//4, img.shape[1]//4:3*img.shape[1]//4,:])
+cv.imshow('center half',img[img.shape[0]//4:3*img.shape[0]//4, img.shape[1]//4:3*img.shape[1]//4,:])
 
-cv.imshow('R',img[:,:,2])
-cv.imshow('G',img[:,:,1])
-cv.imshow('B',img[:,:,0])
+# cv.imshow('R',img[:,:,2])
+# cv.imshow('G',img[:,:,1])
+# cv.imshow('B',img[:,:,0])
 
 cv.waitKey()
 cv.destroyAllWindows()
+
