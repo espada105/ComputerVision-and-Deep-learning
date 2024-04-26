@@ -15,7 +15,7 @@ smooth = np.hstack((
 
 cv.imshow('Smooth', smooth)
 
-femboss = np.array([[-1.0, 0.0, 0.0],
+femboss  = np.array([[-1.0, 0.0, 0.0],
                     [0.0, 0.0, 0.0],
                     [0.0, 0.0, 1.0]])
 
